@@ -1,53 +1,126 @@
-
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>متجرك الرقمي - الصفحة الرئيسية</title>
-    <link rel="stylesheet" href="App.css" />
-  </head>
-  <body>
-    <header class="hero-section arabic-heading">
-      <div class="container">
-        <h1 class="text-gradient">كل ما تحتاجه من خدمات رقمية في مكان واحد</h1>
-        <p class="arabic-text">اشترِ أكواد التفعيل، الاشتراكات، الألعاب، وباقات التفاعل والمتابعين بأفضل الأسعار.</p>
-        <a href="https://wa.me/1234567890" class="btn-primary">اطلب الآن</a>
-      </div>
-    </header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hypeek | كل شي رقمي صار أقرب</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --main-bg: linear-gradient(135deg, #dbeafe, #e0e7ff);
+      --card-bg: rgba(255, 255, 255, 0.8);
+      --primary-color: #6366f1;
+      --text-dark: #1f2937;
+      --text-light: #6b7280;
+      --glass: rgba(255, 255, 255, 0.5);
+    }
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      font-family: 'Cairo', sans-serif;
+    }
+    body {
+      background: var(--main-bg);
+      color: var(--text-dark);
+      line-height: 1.8;
+      overflow-x: hidden;
+    }
+    header {
+      padding: 3rem 1rem;
+      text-align: center;
+      background: var(--main-bg);
+    }
+    header h1 {
+      font-size: 1.8rem;
+      color: var(--primary-color);
+    }
+    header p {
+      color: var(--text-light);
+      font-size: 1rem;
+      margin-top: 0.5rem;
+    }
+    .services {
+      display: grid;
+      gap: 1.5rem;
+      padding: 2rem 1rem;
+    }
+    .card {
+      background: var(--card-bg);
+      border-radius: 16px;
+      padding: 1.5rem;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+      backdrop-filter: blur(10px);
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card h3 {
+      color: var(--primary-color);
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+    .cta {
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    .cta a {
+      background: var(--primary-color);
+      color: white;
+      padding: 0.8rem 1.6rem;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      padding: 1rem;
+      color: var(--text-light);
+    }
+    @media (min-width: 640px) {
+      .services {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2rem;
+      }
+    }
+    @media (min-width: 960px) {
+      .services {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 1024px;
+        margin: auto;
+      }
+      header h1 { font-size: 2.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🚀 Hypeek | كل شي رقمي صار أقرب</h1>
+    <p>نقدّم لك خدمات رقمية مميزة: اشتراكات، تفاعل، ألعاب، بطاقات، وكل اللي تحتاجه!</p>
+  </header>
 
-    <section class="features-section">
-      <div class="container">
-        <h2 class="arabic-heading">💎 منتجاتنا</h2>
-        <div class="features-grid">
-          <div class="enhanced-card">
-            <h3 class="arabic-heading">ألعاب وأكواد تفعيل</h3>
-            <p class="arabic-text">احصل على مفاتيح أصلية لألعاب الكمبيوتر والبلايستيشن، برامج الأوفيس، أدوات التصميم والمزيد.</p>
-          </div>
-          <div class="enhanced-card">
-            <h3 class="arabic-heading">اشتراكات مميزة</h3>
-            <p class="arabic-text">اشترك بخدمات عالمية مثل Canva، Netflix، Spotify، وغيرها بأسعار مخفضة وتسليم فوري.</p>
-          </div>
-          <div class="enhanced-card">
-            <h3 class="arabic-heading">خدمات سوشيال ميديا</h3>
-            <p class="arabic-text">باقات متكاملة لزيادة المتابعين والتفاعل (ريلز، لايكات، مشاهدات) مع ضمان الجودة والتسليم السريع.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+  <section class="services">
+    <div class="card">
+      <h3>خدمات التفاعل والمتابعين</h3>
+      <p>باقات قوية لزيادة المتابعين، لايكات، ريلز، مشاهدات وأكثر بجودة عالية.</p>
+    </div>
+    <div class="card">
+      <h3>اشتراكات للمصممين</h3>
+      <p>حسابات وأكواد تفعيل لأهم أدوات التصميم والبرامج الإبداعية بسعر منافس.</p>
+    </div>
+    <div class="card">
+      <h3>ألعاب، بطاقات وشحن</h3>
+      <p>كروت ألعاب، شحن حسابات، بطاقات رقمية جاهزة للتسليم الفوري.</p>
+    </div>
+  </section>
 
-    <section class="cta-section">
-      <div class="container">
-        <h2 class="arabic-heading">🚀 اطلب الآن وخلّي الباقي علينا</h2>
-        <p class="arabic-text">نضمن لك تجربة سهلة، دعم سريع، وأسعار ما تنلقا بمكان ثاني.</p>
-        <a href="https://wa.me/1234567890" class="btn-primary">تواصل معنا عبر واتساب</a>
-      </div>
-    </section>
+  <section class="cta">
+    <a href="https://instagram.com/1.Hypeek" target="_blank">تواصل معنا عبر إنستغرام دايركت</a>
+  </section>
 
-    <footer class="footer-section arabic-text">
-      <div class="container">
-        <p>&copy; 2025 جميع الحقوق محفوظة - متجرك الرقمي</p>
-      </div>
-    </footer>
-  </body>
+  <footer>
+    &copy; 2025 جميع الحقوق محفوظة - Hypeek
+  </footer>
+</body>
 </html>
